@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Lab -5</title>
+    <link rel="stylesheet" href="frj.css">
+</head>
+<body>
+    <div id="Form">
+        
+        <form onsubmit="return validateForm()">
+            <h1> Contact Us</h1>
+            <label for="name">Enter your name:</label>
+            <input type="text" placeholder="Enter your name" id="name">
+            <br><br>
+            <label for="age">Enter your age:</label>
+            <input type="number" placeholder="Enter your age" id="age">
+            <br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" placeholder="Enter your email" id="email">
+            <br><br>
+            <label for="pin">Enter your pin:</label>
+            <input type="text" placeholder="Enter pin" id="pin">
+            <br><br>
+            <label for="password">Enter your password:</label>
+            <input type="password" placeholder="Enter password" id="password">
+            <br><br>
+            <button type="submit">Subscribe to newsletter</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const email = document.getElementById('email').value;
+            const pin = document.getElementById('pin').value;
+            const password = document.getElementById('password').value;
+        
+            const namePattern = /^[A-Za-z\s]+$/;
+            if (!namePattern.test(name)) {
+                alert('Name should contain only alphabets or spaces.');
+                return false;
+            }
+        
+            if (age < 18 || age > 60) {
+                alert('Age should be an integer between 18 and 60.');
+                return false;
+            }
+        
+            const pinPattern = /^\d{6}$/;
+            if (!pinPattern.test(pin)) {
+                alert('PIN code should contain exactly 6 digits.');
+                return false;
+            }
+        
+            const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+            if (!passwordPattern.test(password)) {
+                alert('Password should have a minimum length of 8 characters, including at least one lowercase letter, one uppercase letter, one special character, and one digit.');
+                return false;
+            }
+        
+            return true;
+        }
+
+    </script>
+</body>
+</html>

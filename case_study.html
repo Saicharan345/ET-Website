@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            color: white;
+            text-align: center;
+            background-image: url(images/download.jpeg);
+            
+            object-fit: contain;
+            background-color: black;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 10px 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .video-container {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .intro{
+            background-image: url(images/download.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        video{
+            background-color: transparent;
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Future</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="start.html">Contact Us</a>
+    </nav>
+
+    <section class="intro">
+        <div class="video-container">
+            <video controls>
+                <source src="images/vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content">
+            <h2>Exploring Emerging Trends</h2>
+            <p>Stay ahead with the latest innovations shaping the world. Watch the video to learn more.</p>
+            <button onclick="learnMore()">Learn More</button>
+        </div>
+    </section>
+
+    <script>
+        function learnMore() {
+            alert("Stay tuned for more exciting updates on emerging trends!");
+        }
+    </script>
+
+</body>
+</html>

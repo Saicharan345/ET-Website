@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/Musato-technologies-empowers-businesses-through-technology-1024x683.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 5px white solid;
+    padding: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: white 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#Form{
+    
+    border: 2px solid transparent;
+    margin-left: 620px;
+
+}
